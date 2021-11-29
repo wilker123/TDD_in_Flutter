@@ -7,11 +7,13 @@ void main() {
     expect(person.imc, 20.56);
   });
 
-  test("Se a idade for maior que 18, então isOlder deve ser true", () {
-    expect(person.isOlder, true);
-  });
+  group("isOlder | ", () {
+    test("Se a idade for maior que 18, então isOlder deve ser true", () {
+      expect(person.isOlder, true);
+    });
 
-  test("Se a idade for igual a 18, então isOlder deve ser true", () {
-    expect(person.isOlder, true);
+    test("Se a idade for igual a 18, então isOlder deve ser true", () {
+      expect(person.isOlder, true);
+    });
   });
 }
